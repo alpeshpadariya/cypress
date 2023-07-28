@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="url">
+<button (click)="generateShortenUrl()" class="btn btn-primary">generate</button>
+<br />
+short url is -> {{afterShortedUrl}}
+
+<br />
+<a href="http://{{afterShortedUrl}}" *ngIf="afterShortedUrl">varify here</a>
